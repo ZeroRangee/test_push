@@ -4,14 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
     <script src="./tailwind.config.js"></script>
+    <script src="./main.js"></script>
     <title>Document</title>
 </head>
 <body class="overflow-x-hidden">
     
+    
+    <div
+    id="menu" 
+    class=" w-screen h-screen  fixed  z-10 hidden bg-lime_green">
+    <div class="p-6">
+        <div class="" onclick="menu()">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-12">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+            </svg>
+        </div>
+    </div>
+    </div>
+
+    <div 
+    id="cart"
+    class="h-screen w-36v fixed z-10 border-lime_green  bg-lime_green hidden right-0">
+    </div>
+
     <header class="px-20 py-6 ">
         <div class=" flex justify-between items-center w-70v h-10v">
-            <div class=" hover:opacity-70 cursor-pointer duration-200">
+            <div 
+            onclick="menu()"
+            class=" hover:opacity-70 cursor-pointer duration-200 ">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-12">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                 </svg>
@@ -19,7 +41,7 @@
             <div class=" text-3xl font-bold hover:opacity-70 hover:scale-150 duration-200">
                 <h1>SUCCULENTUM</h1>
             </div>
-            <div class=" hover:opacity-70 cursor-pointer duration-200 ">
+            <div class=" hover:opacity-70 cursor-pointer duration-200 " onclick="cart()">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-12">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
                 </svg>
