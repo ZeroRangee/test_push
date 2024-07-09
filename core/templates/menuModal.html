@@ -1,0 +1,39 @@
+{% load static %}
+
+
+
+<div id="menuModal" class="fixed z-10 hidden w-100vw h-100vh bg-dark-green" >
+    <div class="flex h-88vh px-10vw py-[4vh]">
+        <div class="flex flex-row h-max-content">
+            <div class=" w-40vw">
+                <div class="">
+                    <div class="flex items-center ">
+                        <div class="duration-300 cursor-pointer hover:opacity-70" onclick="ModalMenu()">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-12 text-light-green">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                            </svg>  
+                        </div>
+                    </div>
+                </div>
+                <div class=" h-60vh">
+                    <div class="flex items-center justify-center h-60vh">
+                        <ul class="flex flex-col gap-y-4">
+                            <li><a href="" 
+                                class="text-4xl duration-300 font-unbounded text-light-green hover:opacity-70">Главная</a></li>
+                            <li><a href="" 
+                                class="text-4xl duration-300 font-unbounded text-light-green hover:opacity-70">Магазин</a></li>
+                            <li><a href="" 
+                                class="text-4xl duration-300 font-unbounded text-light-green hover:opacity-70">Вход</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center h-max-content w-40vw ">
+                <div class="h-60vh ">
+                    <img src="./images/menu.jpg" alt="" class="object-cover rounded-r-lg h-80vh">
+                </div>
+            </div>
+        </div>
+    </div>
+           
+</div>

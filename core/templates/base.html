@@ -1,0 +1,50 @@
+{% load static %}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="{% static 'style/font.css' %}">
+    <link rel="stylesheet"  type="text/tailwindcss" href="{% static 'style/tailwind.config.css' %}">
+    <script src="{% static 'js/main.js'}"></script>
+    <script src="{% static 'js/tailwind.config.js'}"></script>
+    <title>Document</title>
+</head>
+<body>
+
+
+    <header class="flex justify-center w-full ">
+        <div class="flex items-center justify-between w-80vw h-12vh">
+            <div class="duration-300 cursor-pointer hover:opacity-70"
+            
+            onclick="ModalMenu()"
+            >
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-12 text-light-green">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </div>
+            <div class="text-4xl font-bold tracking-widest duration-300 select-none font-unbounded hover:opacity-70 hover:scale-110">
+                <h1 class="text-light-green">SUCCULENTUM</h1>
+            </div>
+            <div class="duration-300 cursor-pointer hover:opacity-70"
+            
+            onclick="CartMenu()"
+            >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-12 text-light-green">
+                    <path fill-rule="evenodd" d="M7.5 6v.75H5.513c-.96 0-1.764.724-1.865 1.679l-1.263 12A1.875 1.875 0 0 0 4.25 22.5h15.5a1.875 1.875 0 0 0 1.865-2.071l-1.263-12a1.875 1.875 0 0 0-1.865-1.679H16.5V6a4.5 4.5 0 1 0-9 0ZM12 3a3 3 0 0 0-3 3v.75h6V6a3 3 0 0 0-3-3Zm-3 8.25a3 3 0 1 0 6 0v-.75a.75.75 0 0 1 1.5 0v.75a4.5 4.5 0 1 1-9 0v-.75a.75.75 0 0 1 1.5 0v.75Z" clip-rule="evenodd" />
+                </svg>  
+            </div>
+        </div>
+    </header>
+
+    {% block content %}
+
+
+
+    {% endblock %}
+</body>
+</html>
